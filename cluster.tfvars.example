@@ -1,0 +1,28 @@
+first_ip = "172.16.102.110"
+
+#vsphere
+vsphere_server = "vcenter.jql"
+vsphere_user = "kube@justinql.local"
+vsphere_password = ""
+vsphere_datacenter = "NUC"
+vsphere_cluster = "Cluster"
+vsphere_folder = "kube"
+vsphere_resource_pool = "Kubernetes"
+vsphere_network = "Infra Network"
+vsphere_datastore = "SSD0"
+
+#control plane
+control_node_prefix = "kube-control-"
+control_node_template = "kube-template"
+control_node_count = 1
+control_node_cpu = 4
+control_node_mem = 8192 #8Gi
+control_node_disk = 64
+
+#worker node
+worker_node_prefix = "kube-worker-"
+worker_node_template = "kube-template"
+worker_node_count = 2
+worker_node_cpu = 4
+worker_node_mem = 8192 #8Gi
+worker_node_disk = 64
